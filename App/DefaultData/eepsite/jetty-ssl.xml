@@ -174,10 +174,10 @@
   <!-- if NIO is not available, use org.eclipse.jetty.server.ssl.SslSocketConnector -->
   
   <New id="sslContextFactory" class="org.eclipse.jetty.http.ssl.SslContextFactory">
-    <Set name="KeyStore">./eepsite/etc/keystore.ks</Set>
+    <Set name="KeyStore">../../Data/eepsite/etc/keystore.ks</Set>
     <Set name="KeyStorePassword">changeit</Set>
     <Set name="KeyManagerPassword">myKeyPassword</Set>
-    <Set name="TrustStore">./eepsite/etc/keystore.ks</Set>
+    <Set name="TrustStore">../../Data/eepsite/etc/keystore.ks</Set>
     <Set name="TrustStorePassword">changeit</Set>
   </New>
 
