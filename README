@@ -1,0 +1,18 @@
+I2P Portable (PortableApps)
+
+This project and I are not affiliated in any way with I2P or the developers of I2P. Do not pester them with issues relating to I2PPortable unless the issue is directly related to I2P itself.
+
+I am currently working alone with this portable I2P. It is basically I2P with some modified configuration files to make it portable and organized to fit the PortableApps standard. I am entirely new to the PortableApps platform but decided to give it a go. This is the result. Why I2P? I2P has a HUGE amount of potential, however it is hardly known and generally speaking the interface is not all that friendly to new users. Imagine an encrypted, decentralized, and private layer over top of the normal internet. Within I2P is forums, pastebins, software development websites (called eepsites), and more. This I2PPortable release is my first attempt of many to help make I2P easier to use. I welcome all feedback from those who know more about the PortableApps platform or may wish to help contribute to this. Thank you.
+
+
+"I2P is an anonymous overlay network - a network within a network. It is intended to protect communication from dragnet surveillance and monitoring by third parties such as ISPs.
+
+I2P is used by many people who care about their privacy: activists, oppressed people, journalists and whistleblowers, as well as the average person.
+
+No network can be "perfectly anonymous". The continued goal of I2P is to make attacks more and more difficult to mount. Its anonymity will get stronger as the size of the network increases and with ongoing academic review.
+
+I2P is available on desktops, embedded systems (like the Raspberry Pi) and Android phones. Help spread the word!"
+
+I2P Portable-Specific Issues
+I2PPortable requires jPortable ( http://portableapps.com/apps/utilities/java_portable ) to be installed. Please install this first. Also, normally once I2P has started a browser window pops up with the I2P router console in it. This has been temporarily disabled. To get to the I2P router console, open a browser and put this address into the address bar: http://localhost:7657/
+

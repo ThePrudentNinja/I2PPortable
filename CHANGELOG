@@ -1,0 +1,25 @@
+CHANGELOG
+0.9.22.0 Development Test 4
+* Forgot to update changelog in this update, this is the changelog
+* Corrected a configuration error making I2P not portable in Test 3
+* Cleaned it up a little
+* Noticed a bug? in I2P relating to BOB, included a BOB config file for a temporary fix till they fix it
+
+0.9.22.0 Development Test 3
+* Fixed a lot of bugs
+* Added a subscription to http://inr.i2p/export/alive-hosts.txt
+* This release should be (hopefully) pretty close to release quality
+* Please report any bugs
+
+0.9.22.0 Development Test 2
+* Corrected the App > readme.txt file
+* Changed the App > AppInfo > appinfo.ini to increase test version to Test 2
+* Changed the App > AppInfo > Launcher > I2PPortable.ini
+* This version should now require jPortable
+* Eliminated need for batch launcher
+* Added a CHANGELOG.txt
+
+0.9.22.0 Development Test 1
+* Initial test
+* Started using I2P version 0.9.22
+* Only changes were to configuration to make it portable
