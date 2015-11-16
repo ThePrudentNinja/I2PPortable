@@ -1,0 +1,1 @@
+.\I2Psvc.exe -c ..\..\Data\settings\wrapper.config
