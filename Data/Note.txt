@@ -1,0 +1,1 @@
+This folder is where configuration data is held after first start. To "reset" your configuration, delete all files in this directory (except for maybe this Note.txt file).
