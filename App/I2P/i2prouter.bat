@@ -22,7 +22,7 @@ set _WRAPPER_BASE=i2psvc
 rem The name and location of the Wrapper configuration file.   This will be used
 rem  if the user does not specify a configuration file as the first argument to
 rem  this script.
-set _WRAPPER_CONF_DEFAULT=..\..\Data\Config\wrapper.config
+set _WRAPPER_CONF_DEFAULT=./wrapper.config
 
 rem Note that it is only possible to pass parameters through to the JVM when
 rem  installing the service, or when running in a console.

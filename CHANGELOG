@@ -1,4 +1,7 @@
 CHANGELOG
+0.9.23.0 Development Test 1
+* Updated I2P to 0.9.23.0
+
 0.9.22.0 Development Test 4
 * Forgot to update changelog in this update, this is the changelog
 * Corrected a configuration error making I2P not portable in Test 3
