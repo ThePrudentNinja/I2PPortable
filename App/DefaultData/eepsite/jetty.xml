@@ -239,7 +239,7 @@
       <Call name="addAppProvider">
         <Arg>
           <New class="org.eclipse.jetty.deploy.providers.ContextProvider">
-            <Set name="monitoredDirName">./eepsite/contexts</Set>
+            <Set name="monitoredDirName">../../Data/eepsite/contexts</Set>
             <Set name="scanInterval">120</Set>
           </New>
         </Arg>
@@ -263,10 +263,10 @@
       <Call id="webappprovider" name="addAppProvider">
         <Arg>
           <New class="org.eclipse.jetty.deploy.providers.WebAppProvider">
-            <Set name="monitoredDirName">./eepsite/webapps</Set>
+            <Set name="monitoredDirName">../../Data/eepsite/webapps</Set>
 	    <Set name="parentLoaderPriority">false</Set>
 	    <Set name="extractWars">false</Set>
-            <Set name="defaultsDescriptor">./eepsite/etc/webdefault.xml</Set>
+            <Set name="defaultsDescriptor">../../Data/eepsite/etc/webdefault.xml</Set>
           </New>
         </Arg>
       </Call>
@@ -285,7 +285,7 @@
         <Item>
           <New class="org.eclipse.jetty.security.HashLoginService">
             <Set name="name">Test Realm</Set>
-            <Set name="config">./eepsite/etc/realm.properties</Set>
+            <Set name="config">../../Data/eepsite/etc/realm.properties</Set>
             <Set name="refreshInterval">0</Set>
           </New>
         </Item>
@@ -303,7 +303,7 @@
     <Ref id="RequestLog">
       <Set name="requestLog">
         <New id="RequestLogImpl" class="net.i2p.jetty.I2PRequestLog">
-          <Set name="filename">./eepsite/logs/yyyy_mm_dd.request.log</Set>
+          <Set name="filename">../../Data/eepsite/logs/yyyy_mm_dd.request.log</Set>
           <Set name="filenameDateFormat">yyyy_MM_dd</Set>
           <Set name="retainDays">90</Set>
           <Set name="append">true</Set>
