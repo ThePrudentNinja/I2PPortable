@@ -17,7 +17,7 @@ No network can be "perfectly anonymous". The continued goal of I2P is to make at
 I2P is available on desktops, embedded systems (like the Raspberry Pi) and Android phones. Help spread the word!"
 
 I2P Portable-Specific Issues
-I2PPortable requires jPortable ( http://portableapps.com/apps/utilities/java_portable ) to be installed. Please install this first. I2P Portable expects jPortable to be in the same directory as tne I2PPortable. For example (CommonFiles contains the jPortable):
+I2PPortable requires jPortable ( http://portableapps.com/apps/utilities/java_portable ) to be installed. Please install this first. I2P Portable expects jPortable to be in the same directory as the I2PPortable. For example (CommonFiles contains the jPortable):
 I2PPortable
 CommonFiles
 
