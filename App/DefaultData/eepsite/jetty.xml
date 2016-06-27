@@ -30,10 +30,14 @@
 <!-- Note that the XML encoding for this file is UTF-8.                        -->
 <!--                                                                           -->
 <!-- If you have a 'split' directory installation, with configuration          -->
-<!-- files in ~/.i2p (Linux) or %APPDATA%\I2P (Windows), be sure to            -->
+<!-- files in ~/.i2p (Linux), %APPDATA%\I2P (Windows),                         -->
+<!-- or /Users/(user)/Library/Application Support/i2p (Mac), be sure to        -->
 <!-- edit the file in the configuration directory, NOT the install directory.  -->
 <!-- When running as a Linux daemon, the configuration directory is            -->
 <!-- /var/lib/i2p and the install directory is /usr/share/i2p .                -->
+<!-- When running as a Windows service,                                        -->
+<!-- the configuration directory is \ProgramData\i2p                           -->
+<!-- and the install directory is \Program Files\i2p .                         -->
 <!--                                                                           -->
 <!-- ========================================================================= -->
 
@@ -239,7 +243,7 @@
       <Call name="addAppProvider">
         <Arg>
           <New class="org.eclipse.jetty.deploy.providers.ContextProvider">
-            <Set name="monitoredDirName">../../Data/eepsite/contexts</Set>
+            <Set name="monitoredDirName">./eepsite/contexts</Set>
             <Set name="scanInterval">120</Set>
           </New>
         </Arg>
@@ -263,13 +267,21 @@
       <Call id="webappprovider" name="addAppProvider">
         <Arg>
           <New class="org.eclipse.jetty.deploy.providers.WebAppProvider">
-            <Set name="monitoredDirName">../../Data/eepsite/webapps</Set>
+            <Set name="monitoredDirName">./eepsite/webapps</Set>
 	    <Set name="parentLoaderPriority">false</Set>
 	    <Set name="extractWars">false</Set>
-            <Set name="defaultsDescriptor">../../Data/eepsite/etc/webdefault.xml</Set>
+            <Set name="defaultsDescriptor">./eepsite/etc/webdefault.xml</Set>
           </New>
         </Arg>
       </Call>
+    </Ref>
+
+    <!-- ===================== -->
+    <!-- DefaultHandler config -->
+    <!-- http://stackoverflow.com/questions/4202275/how-to-prevent-jetty-from-showing-context-related-information -->
+    <!-- ===================== -->
+    <Ref id="DefaultHandler">
+      <Set name="showContexts">false</Set>
     </Ref>
 
     <!-- =========================================================== -->
@@ -285,7 +297,7 @@
         <Item>
           <New class="org.eclipse.jetty.security.HashLoginService">
             <Set name="name">Test Realm</Set>
-            <Set name="config">../../Data/eepsite/etc/realm.properties</Set>
+            <Set name="config">./eepsite/etc/realm.properties</Set>
             <Set name="refreshInterval">0</Set>
           </New>
         </Item>
@@ -303,13 +315,15 @@
     <Ref id="RequestLog">
       <Set name="requestLog">
         <New id="RequestLogImpl" class="net.i2p.jetty.I2PRequestLog">
-          <Set name="filename">../../Data/eepsite/logs/yyyy_mm_dd.request.log</Set>
+          <Set name="filename">./eepsite/logs/yyyy_mm_dd.request.log</Set>
           <Set name="filenameDateFormat">yyyy_MM_dd</Set>
           <Set name="retainDays">90</Set>
           <Set name="append">true</Set>
           <Set name="extended">false</Set>
           <Set name="logCookies">false</Set>
           <Set name="LogTimeZone">GMT</Set>
+          <!-- False for b32 logging. True for b64 logging. Default false -->
+          <Set name="b64">false</Set>
         </New>
       </Set>
     </Ref>

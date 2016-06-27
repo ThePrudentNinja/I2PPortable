@@ -1,6 +1,13 @@
 CHANGELOG
+0.9.26.0 Development Test 1
+* Updated I2P to 0.9.23
+* Corrected a typo in CHANGELOG
+* Attempting to recover from data storage issues
+* Modified README
+* Modified wrapper.config
+
 0.9.23.0 Development Test 1
-* Updated I2P to 0.9.23.0
+* Updated I2P to 0.9.23
 
 0.9.22.0 Development Test 4
 * Forgot to update changelog in this update, this is the changelog

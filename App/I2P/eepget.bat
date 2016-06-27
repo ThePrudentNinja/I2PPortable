@@ -3,7 +3,7 @@
 ::
 :: This should have been changed by the installer
 ::
-set _I2PHOME=S:\I2P
+set _I2PHOME=C:\Program Files (x86)\i2p
 
 :: In case the autodetection fails or a specific Java binary is needed,
 :: uncomment the next line and set the full path to "java.exe"
