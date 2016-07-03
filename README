@@ -7,6 +7,12 @@ This project and I are not affiliated in any way with I2P ( http://geti2p.net ) 
 
 I am currently working alone with this portable I2P. It is basically I2P with some modified configuration files to make it portable and organized to fit the PortableApps standard. I am entirely new to the PortableApps platform but decided to give it a go. This is the result. Why I2P? I2P has a HUGE amount of potential, however it is hardly known and generally speaking the interface is not all that friendly to new users. Imagine an encrypted, decentralized, and private layer over top of the normal internet. Within I2P is forums, pastebins, software development websites (called eepsites), and more. This I2PPortable release is my first attempt of many to help make I2P easier to use. I welcome all feedback from those who know more about the PortableApps platform or may wish to help contribute to this. Thank you.
 
+This project is a part of the I2P Portable Apps project. The I2P Portable Apps project is a project aimed at making I2P use portable. The project may get renamed at some point.
+
+Current Projects with the I2P Portable Apps project:
+* I2PPortable - https://github.com/ThePrudentNinja/I2PPortable
+* I2PBrowserWin - https://github.com/ThePrudentNinja/I2PBrowserWin
+
 
 "I2P is an anonymous overlay network - a network within a network. It is intended to protect communication from dragnet surveillance and monitoring by third parties such as ISPs.
 
