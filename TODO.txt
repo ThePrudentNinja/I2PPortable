@@ -1,0 +1,5 @@
+TODO List
+
+* Write up detailed information on how to get the official I2P download into this portable version
+* Create better icons
+* See if there is a way to have this portable I2P detect and use jPortable or an installed Java if one exists
